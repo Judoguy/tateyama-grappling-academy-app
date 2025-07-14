@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <img src="tateyama-grappling-academy/public/images/image (1).png" alt="Our Philosophy" class="img-fluid rounded shadow-sm">
+        <img src="@/assets/images/image (1).png" alt="Our Philosophy" class="img-fluid rounded shadow-sm">
       </div>
     </div>
 
