@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <img src="@/assets/images/image (1).png" alt="Our Philosophy" class="img-fluid rounded shadow-sm">
+        <img src="https://via.placeholder.com/800x600?text=Students+Training+with+Instructor" alt="Our Philosophy" class="img-fluid rounded shadow-sm">
       </div>
     </div>
 

@@ -29,7 +29,7 @@
 
     <div class="row g-4 mb-5">
       <div class="col-md-6">
-        <img src="https://via.placeholder.com/800x600?text=Personal+Trainer+with+Client" :alt="$t('facilities.personal_training_title')" class="img-fluid rounded shadow-sm mb-3">
+        <img src="/images/image (1).png" :alt="$t('facilities.personal_training_title')" class="img-fluid rounded shadow-sm mb-3">
       </div>
       <div class="col-md-6">
         <div class="p-4 bg-light rounded shadow-sm border-start border-4 border-warning h-100">
