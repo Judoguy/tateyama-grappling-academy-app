@@ -39,19 +39,29 @@
     </header>
 
     <main class="flex-grow-1 container mt-4 p-3">
-      <router-view/>
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </main>
 
     <footer class="bg-dark text-light p-3 text-center shadow-inner">
       <p class="mb-0">{{ $t('footer.copyright') }}</p>
       <p class="mb-0 text-muted">{{ $t('footer.design_credit') }}</p>
     </footer>
+    <ScrollToTopButton />
   </div>
 </template>
 
 <script>
+import ScrollToTopButton from './components/ScrollToTopButton.vue';
+
 export default {
   name: 'App',
+  components: {
+    ScrollToTopButton,
+  },
   methods: {
     changeLocale(locale) {
       this.$i18n.locale = locale;
