@@ -5,7 +5,7 @@
 
     <div class="row g-4 mb-5">
       <div class="col-md-6">
-        <img src="https://via.placeholder.com/800x600?text=Spacious+Grappling+Mat+Area" :alt="$t('facilities.mats_title')" class="img-fluid rounded shadow-sm mb-3">
+        <img :src="spaciousMatAreas" :alt="$t('facilities.mats_title')" class="img-fluid rounded shadow-sm mb-3">
       </div>
       <div class="col-md-6">
         <div class="p-4 bg-light rounded shadow-sm border-start border-4 border-warning h-100">
@@ -17,7 +17,7 @@
 
     <div class="row g-4 mb-5 flex-row-reverse">
       <div class="col-md-6">
-        <img src="https://via.placeholder.com/800x600?text=Weightlifting+Equipment+Area" :alt="$t('facilities.weightlifting_title')" class="img-fluid rounded shadow-sm mb-3">
+        <img :src="dedicatedWeightliftingArea" :alt="$t('facilities.weightlifting_title')" class="img-fluid rounded shadow-sm mb-3">
       </div>
       <div class="col-md-6">
         <div class="p-4 bg-light rounded shadow-sm border-end border-4 border-warning h-100">
@@ -29,7 +29,7 @@
 
     <div class="row g-4 mb-5">
       <div class="col-md-6">
-        <img src="/images/image (1).png" :alt="$t('facilities.personal_training_title')" class="img-fluid rounded shadow-sm mb-3">
+        <img :src="personalTrainingSessions" :alt="$t('facilities.personal_training_title')" class="img-fluid rounded shadow-sm mb-3">
       </div>
       <div class="col-md-6">
         <div class="p-4 bg-light rounded shadow-sm border-start border-4 border-warning h-100">
@@ -41,7 +41,7 @@
 
     <div class="row g-4 mb-5 flex-row-reverse">
       <div class="col-md-6">
-        <img src="https://via.placeholder.com/800x600?text=Yoga+and+Mobility+Studio" :alt="$t('facilities.yoga_title')" class="img-fluid rounded shadow-sm mb-3">
+        <img :src="yogaAndMobilityStudio" :alt="$t('facilities.yoga_title')" class="img-fluid rounded shadow-sm mb-3">
       </div>
       <div class="col-md-6">
         <div class="p-4 bg-light rounded shadow-sm border-end border-4 border-warning h-100">
@@ -53,7 +53,7 @@
 
     <div class="row g-4 mb-5">
       <div class="col-md-6">
-        <img src="https://via.placeholder.com/800x600?text=Computer+Workstations" :alt="$t('facilities.computers_title')" class="img-fluid rounded shadow-sm mb-3">
+        <img :src="computerWorkstations" :alt="$t('facilities.computers_title')" class="img-fluid rounded shadow-sm mb-3">
       </div>
       <div class="col-md-6">
         <div class="p-4 bg-light rounded shadow-sm border-start border-4 border-warning h-100">
@@ -66,7 +66,22 @@
 </template>
 
 <script>
+import spaciousMatAreas from '@/assets/images/Spacious Mat Areas.png';
+import dedicatedWeightliftingArea from '@/assets/images/Dedicated Weightlifting Area.png';
+import personalTrainingSessions from '@/assets/images/Personal Training Sessions.png';
+import yogaAndMobilityStudio from '@/assets/images/image(3).png';
+import computerWorkstations from '@/assets/images/computerAccessForMembers.png';
+
 export default {
   name: 'FacilitiesPage',
-}
+  data() {
+    return {
+      spaciousMatAreas: spaciousMatAreas,
+      dedicatedWeightliftingArea: dedicatedWeightliftingArea,
+      personalTrainingSessions: personalTrainingSessions,
+      yogaAndMobilityStudio: yogaAndMobilityStudio,
+      computerWorkstations: computerWorkstations,
+    };
+  },
+};
 </script>
