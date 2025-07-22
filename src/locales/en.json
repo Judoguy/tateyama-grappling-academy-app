@@ -4,21 +4,22 @@
     "tagline": "Master the art of grappling in a supportive and challenging environment.",
     "hero_slogan": "Train Hard, Fight Smart, Live Strong",
     "philosophy_title": "Our Philosophy",
-    "philosophy_text": "At Tateyama Grappling Academy, we believe in fostering discipline, respect, and continuous improvement through the practice of martial arts. Our experienced instructors are dedicated to helping you achieve your full potential, emphasizing both physical prowess and mental fortitude.",
+    "philosophy_text": "At Tateyama Grappling Academy, we believe in fostering discipline, respect, and continuous improvement through the practice of grappling martial arts. Our experienced instructor is dedicated to helping you achieve your full potential, emphasizing both physical prowess and mental fortitude.",
     "community_title": "Join Our Community",
     "community_text": "Whether you're a beginner or an experienced practitioner, you'll find a welcoming and inclusive community here. We offer classes for all skill levels and ages, focusing on practical techniques, physical conditioning, and building lasting friendships."
   },
   "about": {
     "title": "About Tateyama Grappling Academy",
-    "tagline": "Dedicated to the art and discipline of grappling, Tateyama Grappling Academy offers world-class instruction in a supportive and challenging environment.",
+    "tagline": "Dedicated to the art and discipline of grappling, Tateyama Grappling Academy offers in-depth instruction in a supportive and challenging environment.",
     "philosophy_title": "Our Philosophy",
     "philosophy_text_1": "We believe that martial arts training is more than just physical exercise; it's a journey of self-discovery, discipline, and mental fortitude. Our curriculum is designed to build strong, resilient individuals both on and off the mats.",
     "philosophy_text_2": "We emphasize fundamental techniques, strategic thinking, and practical application, ensuring our students develop a deep understanding of grappling principles.",
-    "instructors_title": "Our Instructors",
-    "instructors_text_1": "Our team of highly experienced and dedicated instructors are passionate about sharing their knowledge and helping students achieve their goals. Each instructor brings a wealth of experience and a commitment to personalized coaching.",
-    "instructors_text_2": "They are not just teachers, but mentors who guide students through every step of their grappling journey, ensuring a safe, effective, and enjoyable learning experience.",
+    "instructors_title": "Our Instructor",
+    "instructors_text_1": "Our  highly experienced and dedicated instructor is passionate about sharing his knowledge and helping students achieve their goals. Your instructor brings a wealth of experience and a commitment to personalized coaching.",
+    "instructors_text_2": "Not just teachers, but a mentor who guides students through every step of their grappling journey, ensuring a safe, effective, and enjoyable learning experience.",
+    
     "history_title": "Our History",
-    "history_text_1": "Founded in [Year], Tateyama Grappling Academy started with a vision to create a premier grappling facility that focuses on quality instruction and community building. Over the years, we have grown into a thriving academy, producing skilled grapplers and fostering a strong sense of camaraderie among our members.",
+    "history_text_1": "Founded in 2025, Tateyama Grappling Academy started with a vision to create a premier grappling facility that focuses on quality instruction and community building. Over future the years, we will have grown into a thriving academy, producing skilled grapplers and fostering a strong sense of camaraderie among our members.",
     "history_text_2": "We are proud of our heritage and continue to uphold the values of hard work, respect, and continuous improvement that have defined us since day one."
   },
   "classes": {
@@ -89,10 +90,10 @@
     "home": "Home",
     "about": "About",
     "classes": "Classes",
+    "curriculum": "Curriculum",
     "schedule": "Schedule",
-    "contact": "Contact",
     "facilities": "Facilities",
-    "curriculum": "Curriculum"
+    "contact": "Contact"
   },
   "footer": {
     "copyright": "&copy; 2025 Tateyama Grappling Academy. All rights reserved.",
@@ -1593,5 +1594,22 @@
     "continuing_education_competition_exposure": "Competition Exposure: Staying current with evolving sport",
     "continuing_education_coaching_development": "Coaching Development: Advanced coaching education",
     "continuing_education_safety_updates": "Safety Updates: Current safety protocols and procedures"
+  },
+  "matthew_moser_bio": {
+    "title": "Meet Your Instructor: Matthew Moser",
+    "intro_paragraph": "Welcome! I'm Matthew Moser, and I'm thrilled to share my lifelong passion for grappling martial arts and movement with you. With a unique blend of academic rigor in Kinesiology and extensive practical experience across multiple grappling disciplines, I'm dedicated to providing high-quality instruction in Judo, American Folk Wrestling, Brazilian Jiu-Jitsu, and Submission Grappling.",
+    "journey_title": "My Journey & Expertise:",
+    "journey_paragraph_1": "My journey in martial arts began early, culminating in achieving a 3rd Degree Black Belt in Judo. This foundation in Judo's throws and pins laid the groundwork for a deeper exploration into the diverse world of grappling. I have since expanded my expertise into Brazilian Jiu-Jitsu, focusing on ground control and submissions, and have a strong understanding of Wrestling and No-Gi Submission Grappling techniques that are essential for a well-rounded grappler. My competitive background includes placing 3rd and 5th twice in DOD Europe High School Wrestling, further solidifying my practical experience on the mat. I've also had the privilege of serving as an Assistant Head Judo Instructor at the SFSU Judo Club, where I actively coached and guided students.",
+    "journey_paragraph_2": "Beyond the mat, my commitment to understanding human movement runs deep. I hold a B.S. in Kinesiology: Exercise Science, Fitness, and Human Movement Analysis from San Francisco State University, where I delved into the intricacies of applied exercise physiology, applied biomechanics, and physical movement analysis. This academic background isn't just theoretical; it informs how I teach, allowing me to explain techniques with a deeper understanding of body mechanics, injury prevention, and optimal performance.",
+    "why_train_title": "Why Train With Me?",
+    "holistic_approach_title": "Holistic Approach:",
+    "holistic_approach_text": "My instruction combines the traditional depth of Judo with the modern realities of BJJ, wrestling, and submission grappling, ensuring you develop a versatile skill set for self-defense, competition, or fitness.",
+    "scientifically_informed_title": "Scientifically Informed Coaching:",
+    "scientifically_informed_text": "Leveraging my Kinesiology background, I explain techniques not just as \"what to do,\" but \"why it works,\" helping you understand the underlying biomechanics and physiology.",
+    "conditioning_performance_title": "Conditioning & Performance:",
+    "conditioning_performance_text": "With certifications as a National Strength and Conditioning Association (NSCA) Certified Strength and Conditioning Specialist and a National Academy of Sports Medicine (NASM) Performance Enhancement Specialist, I understand how to integrate conditioning principles to enhance your martial arts performance and overall physical resilience. I've applied these skills in roles such as a Physical Therapy Exercise Specialist and a Certified Sports Trainer, including creating specialized programs for diverse populations.",
+    "experienced_educator_title": "Experienced Educator:",
+    "experienced_educator_text": "Before dedicating myself fully to martial arts instruction, I spent ten years as an English teacher in Japan through the JET Program, teaching grades K-9 across multiple schools. This experience honed my ability to break down complex concepts, adapt to diverse learning styles, and create an engaging learning environment.",
+    "conclusion_paragraph": "Whether you're a complete beginner eager to learn foundational movements, an experienced practitioner looking to refine your technique, or someone seeking a challenging and rewarding way to improve your fitness, I invite you to join our community. Let's explore the art and science of grappling together!"
   }
 }

@@ -12,19 +12,20 @@
         </div>
       </div>
       <div class="col-md-6">
-        <img src="https://via.placeholder.com/800x600?text=Students+Training+with+Instructor" alt="Our Philosophy" class="img-fluid rounded shadow-sm">
+        <img :src="philosophyImage" alt="Our Philosophy" class="img-fluid rounded shadow-sm">
       </div>
     </div>
 
     <div class="row g-4 mb-5">
       <div class="col-md-6">
-        <img src="https://via.placeholder.com/800x600?text=Instructor+Teaching+Class" alt="Our Instructors" class="img-fluid rounded shadow-sm">
+        <img :src="instructorImage" alt="Our Instructors" class="img-fluid rounded shadow-sm">
       </div>
       <div class="col-md-6">
         <div class="p-4 bg-light rounded shadow-sm border-end border-4 border-warning h-100">
           <h2 class="h4 fw-bold mb-3 text-dark">{{ $t('about.instructors_title') }}</h2>
           <p class="text-muted mb-3">{{ $t('about.instructors_text_1') }}</p>
-          <p class="text-muted">{{ $t('about.instructors_text_2') }}</p>
+          <p class="text-muted mb-3">{{ $t('about.instructors_text_2') }}</p>
+          <router-link to="/about/matthew-moser" class="btn btn-primary">Meet Matthew Moser</router-link>
         </div>
       </div>
     </div>
@@ -38,7 +39,16 @@
 </template>
 
 <script>
+import philosophyImage from '@/assets/images/image(1).png';
+import instructorImage from '@/assets/images/image(2).png';
+
 export default {
   name: 'AboutPage',
-}
+  data() {
+    return {
+      philosophyImage: philosophyImage,
+      instructorImage: instructorImage,
+    };
+  },
+};
 </script>

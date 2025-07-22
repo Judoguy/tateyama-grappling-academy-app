@@ -10,8 +10,14 @@ import KidsWrestlingPlan from '../views/KidsWrestlingPlan.vue'
 import BJJPlan from '../views/BJJPlan.vue'
 import JudoPlan from '../views/JudoPlan.vue'
 import SubmissionGrapplingPlan from '../views/SubmissionGrapplingPlan.vue'
+import MatthewMoserBio from '../views/MatthewMoserBio.vue'
 
 const routes = [
+  {
+    path: '/about/matthew-moser',
+    name: 'MatthewMoserBio',
+    component: MatthewMoserBio
+  },
   {
     path: '/',
     name: 'HomePage',
@@ -71,7 +77,13 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  /* eslint-disable no-unused-vars */
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0 }
+  },
+  /* eslint-enable no-unused-vars */
 })
 
 export default router
