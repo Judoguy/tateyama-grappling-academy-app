@@ -1,77 +1,71 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomePage from '../views/HomePage.vue'
-import AboutPage from '../views/AboutPage.vue'
-import ClassesPage from '../views/ClassesPage.vue'
-import SchedulePage from '../views/SchedulePage.vue'
-import ContactPage from '../views/ContactPage.vue'
-import FacilitiesPage from '../views/FacilitiesPage.vue'
-import CurriculumPage from '../views/CurriculumPage.vue'
-import KidsWrestlingPlan from '../views/KidsWrestlingPlan.vue'
-import BJJPlan from '../views/BJJPlan.vue'
-import JudoPlan from '../views/JudoPlan.vue'
-import SubmissionGrapplingPlan from '../views/SubmissionGrapplingPlan.vue'
-import MatthewMoserBio from '../views/MatthewMoserBio.vue'
 
 const routes = [
   {
     path: '/about/matthew-moser',
     name: 'MatthewMoserBio',
-    component: MatthewMoserBio
+    component: () => import('../views/MatthewMoserBio.vue')
   },
   {
     path: '/',
     name: 'HomePage',
-    component: HomePage
+    component: () => import('../views/HomePage.vue')
   },
   {
     path: '/about',
     name: 'AboutPage',
-    component: AboutPage
+    component: () => import('../views/AboutPage.vue')
   },
   {
     path: '/classes',
     name: 'ClassesPage',
-    component: ClassesPage
+    component: () => import('../views/ClassesPage.vue')
   },
   {
     path: '/schedule',
     name: 'SchedulePage',
-    component: SchedulePage
+    component: () => import('../views/SchedulePage.vue')
   },
   {
     path: '/contact',
     name: 'ContactPage',
-    component: ContactPage
+    component: () => import('../views/ContactPage.vue')
   },
   {
     path: '/facilities',
     name: 'FacilitiesPage',
-    component: FacilitiesPage
+    component: () => import('../views/FacilitiesPage.vue')
   },
   {
     path: '/curriculum',
     name: 'CurriculumPage',
-    component: CurriculumPage
+    component: () => import('../views/CurriculumPage.vue')
   },
   {
     path: '/curriculum/kids-wrestling',
     name: 'KidsWrestlingPlan',
-    component: KidsWrestlingPlan
+    component: () => import('../views/KidsWrestlingPlan.vue')
   },
   {
     path: '/curriculum/bjj',
     name: 'BJJPlan',
-    component: BJJPlan
+    component: () => import('../views/BJJPlan.vue')
   },
   {
     path: '/curriculum/judo',
     name: 'JudoPlan',
-    component: JudoPlan
+    component: () => import('../views/JudoPlan.vue')
   },
   {
     path: '/curriculum/submission-grappling',
     name: 'SubmissionGrapplingPlan',
-    component: SubmissionGrapplingPlan
+    component: () => import('../views/SubmissionGrapplingPlan.vue')
+  },
+  // Catch all unmatched routes
+  {
+    path: '/:catchAll(.*)',
+    name: 'NotFound',
+    component: () => import('../views/NotFoundPage.vue')
   }
 ]
 

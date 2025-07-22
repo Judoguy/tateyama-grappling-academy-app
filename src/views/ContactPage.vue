@@ -110,21 +110,36 @@ export default {
         return;
       }
 
-      // Simulate form submission success
-      this.messageStatus = 'success';
-      this.messageText = this.$t('contact.message_sent_success');
+      // Send data to backend
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(this.form),
+      })
+      .then(response => response.json())
+      .then(data => {
+        this.messageStatus = 'success';
+        this.messageText = data.message || this.$t('contact.message_sent_success');
 
-      // Clear form after a short delay
-      setTimeout(() => {
-        this.form.name = '';
-        this.form.email = '';
-        this.form.message = '';
-        this.messageStatus = '';
-        this.messageText = '';
-        this.nameError = '';
-        this.emailError = '';
-        this.messageError = '';
-      }, 3000); // Message disappears after 3 seconds
+        // Clear form after a short delay
+        setTimeout(() => {
+          this.form.name = '';
+          this.form.email = '';
+          this.form.message = '';
+          this.messageStatus = '';
+          this.messageText = '';
+          this.nameError = '';
+          this.emailError = '';
+          this.messageError = '';
+        }, 3000);
+      })
+      .catch(error => {
+        console.error('Error submitting form:', error);
+        this.messageStatus = 'error';
+        this.messageText = this.$t('contact.message_sent_error');
+      });
     },
   },
 };

@@ -81,7 +81,8 @@
     "email_required": "Email is required.",
     "email_invalid": "Please enter a valid email address.",
     "message_required": "Message is required.",
-    "form_validation_error": "Please correct the errors in the form."
+    "form_validation_error": "Please correct the errors in the form.",
+    "message_sent_error": "There was an error sending your message. Please try again later."
   },
   "facilities": {
     "title": "Our State-of-the-Art Facilities",

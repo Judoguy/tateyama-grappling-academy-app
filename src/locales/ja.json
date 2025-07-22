@@ -81,7 +81,8 @@
     "email_required": "メールアドレスは必須です。",
     "email_invalid": "有効なメールアドレスを入力してください。",
     "message_required": "メッセージは必須です。",
-    "form_validation_error": "フォームのエラーを修正してください。"
+    "form_validation_error": "フォームのエラーを修正してください。",
+    "message_sent_error": "メッセージの送信中にエラーが発生しました。後でもう一度お試しください。"
   },
   "facilities": {
     "title": "最先端の施設",

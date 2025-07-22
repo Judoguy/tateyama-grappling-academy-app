@@ -6,7 +6,7 @@
       <!-- Kids Wrestling -->
       <div class="col">
         <div class="card h-100 shadow-sm border-top border-4 border-warning text-center">
-          <video class="card-img-top" controls loop muted autoplay poster="https://via.placeholder.com/400x300?text=Kids+Wrestling+Class">
+          <video class="card-img-top" controls loop muted autoplay :poster="kidsWrestlingPoster" alt="Kids Wrestling Class Video" loading="lazy">
             <source :src="kidsWrestlingVideo" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -21,7 +21,7 @@
       <!-- Brazilian Jiu-Jitsu -->
       <div class="col">
         <div class="card h-100 shadow-sm border-top border-4 border-warning text-center">
-          <video class="card-img-top" controls loop muted autoplay poster="https://via.placeholder.com/400x300?text=Brazilian+Jiu-Jitsu+Sparring">
+          <video class="card-img-top" controls loop muted autoplay :poster="bjjPoster" alt="Brazilian Jiu-Jitsu Sparring Video" loading="lazy">
             <source :src="bjjVideo" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -36,7 +36,7 @@
       <!-- Judo -->
       <div class="col">
         <div class="card h-100 shadow-sm border-top border-4 border-warning text-center">
-          <video class="card-img-top" controls loop muted autoplay poster="https://via.placeholder.com/400x300?text=Judo+Throw+Technique">
+          <video class="card-img-top" controls loop muted autoplay :poster="judoPoster" alt="Judo Throw Technique Video" loading="lazy">
             <source :src="judoVideo" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -51,7 +51,7 @@
       <!-- Submission Grappling -->
       <div class="col">
         <div class="card h-100 shadow-sm border-top border-4 border-warning text-center">
-          <video class="card-img-top" controls loop muted autoplay poster="https://via.placeholder.com/400x300?text=Submission+Grappling+Drill">
+          <video class="card-img-top" controls loop muted autoplay :poster="submissionGrapplingPoster" alt="Submission Grappling Drill Video" loading="lazy">
             <source :src="submissionGrapplingVideo" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -80,6 +80,10 @@ export default {
       bjjVideo: bjjVideo,
       judoVideo: judoVideo,
       submissionGrapplingVideo: submissionGrapplingVideo,
+      kidsWrestlingPoster: 'https://via.placeholder.com/400x300?text=Kids+Wrestling+Class',
+      bjjPoster: 'https://via.placeholder.com/400x300?text=Brazilian+Jiu-Jitsu+Sparring',
+      judoPoster: 'https://via.placeholder.com/400x300?text=Judo+Throw+Technique',
+      submissionGrapplingPoster: 'https://via.placeholder.com/400x300?text=Submission+Grappling+Drill',
     };
   },
 };
