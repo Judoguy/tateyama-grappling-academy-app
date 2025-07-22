@@ -53,6 +53,11 @@
     "note_2": "Schedule is subject to change. Please check regularly for updates.",
     "note_3": "Private lessons are available by appointment."
   },
+  "schedule_classes": {
+    "open_mat": "Open Mat",
+    "strength_conditioning": "Strength Training and Conditioning",
+    "wrestling": "Wrestling"
+  },
   "contact": {
     "title": "Get in Touch",
     "tagline": "We'd love to hear from you! Reach out to us with any questions or to schedule a visit.",

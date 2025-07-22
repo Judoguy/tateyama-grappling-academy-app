@@ -19,44 +19,32 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row">9:00 AM - 10:00 AM</th>
-            <td>{{ $t('classes.kids_wrestling_title') }}</td>
-            <td>{{ $t('classes.bjj_title') }} (All Levels)</td>
-            <td>{{ $t('classes.judo_title') }} (Beginner)</td>
-            <td>{{ $t('classes.submission_grappling_title') }}</td>
-            <td>Open Mat</td>
-            <td>{{ $t('classes.kids_wrestling_title') }}</td>
-            <td>Closed</td>
+            <th scope="row">10:00 AM - 11:00 AM</th>
+            <td colspan="7" class="submission-grappling-class">{{ $t('classes.submission_grappling_title') }}</td>
           </tr>
           <tr>
-            <th scope="row">10:00 AM - 11:30 AM</th>
-            <td>{{ $t('classes.bjj_title') }} (Advanced)</td>
-            <td>{{ $t('classes.judo_title') }} (Advanced)</td>
-            <td>{{ $t('classes.bjj_title') }} (All Levels)</td>
-            <td>{{ $t('classes.bjj_title') }} (Advanced)</td>
-            <td>{{ $t('classes.submission_grappling_title') }}</td>
-            <td>{{ $t('classes.bjj_title') }} (All Levels)</td>
-            <td>Closed</td>
+            <th scope="row">11:00 AM - 12:00 PM</th>
+            <td colspan="7" class="open-mat-class">{{ $t('schedule_classes.open_mat') }}</td>
           </tr>
           <tr>
-            <th scope="row">6:00 PM - 7:00 PM</th>
-            <td>{{ $t('classes.submission_grappling_title') }}</td>
-            <td>{{ $t('classes.kids_wrestling_title') }}</td>
-            <td>{{ $t('classes.bjj_title') }} (All Levels)</td>
-            <td>{{ $t('classes.judo_title') }} (All Levels)</td>
-            <td>Open Mat</td>
-            <td>Closed</td>
-            <td>Closed</td>
+            <th scope="row">12:00 PM - 4:00 PM</th>
+            <td colspan="7" class="strength-training-class">{{ $t('schedule_classes.strength_conditioning') }}</td>
           </tr>
           <tr>
-            <th scope="row">7:00 PM - 8:30 PM</th>
-            <td>{{ $t('classes.bjj_title') }} (All Levels)</td>
-            <td>{{ $t('classes.submission_grappling_title') }}</td>
-            <td>{{ $t('classes.bjj_title') }} (Advanced)</td>
-            <td>{{ $t('classes.bjj_title') }} (All Levels)</td>
-            <td>Closed</td>
-            <td>Closed</td>
-            <td>Closed</td>
+            <th scope="row">4:00 PM - 5:00 PM</th>
+            <td colspan="7" class="wrestling-class">{{ $t('schedule_classes.wrestling') }}</td>
+          </tr>
+          <tr>
+            <th scope="row">5:00 PM - 6:30 PM</th>
+            <td colspan="7" class="judo-class">{{ $t('classes.judo_title') }}</td>
+          </tr>
+          <tr>
+            <th scope="row">6:30 PM - 8:00 PM</th>
+            <td colspan="7" class="bjj-class">{{ $t('classes.bjj_title') }}</td>
+          </tr>
+          <tr>
+            <th scope="row">8:00 PM - 9:00 PM</th>
+            <td colspan="7" class="submission-grappling-class">{{ $t('classes.submission_grappling_title') }}</td>
           </tr>
         </tbody>
       </table>
@@ -78,3 +66,29 @@ export default {
   name: 'SchedulePage',
 }
 </script>
+
+<style scoped>
+.submission-grappling-class {
+  background-color: #e0f7fa; /* Light Cyan */
+}
+
+.open-mat-class {
+  background-color: #fffde7; /* Light Yellow */
+}
+
+.strength-training-class {
+  background-color: #f3e5f5; /* Light Purple */
+}
+
+.wrestling-class {
+  background-color: #ffe0b2; /* Light Orange */
+}
+
+.judo-class {
+  background-color: #e8f5e9; /* Light Green */
+}
+
+.bjj-class {
+  background-color: #e3f2fd; /* Light Blue */
+}
+</style>

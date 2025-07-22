@@ -6,7 +6,10 @@
       <!-- Kids Wrestling -->
       <div class="col">
         <div class="card h-100 shadow-sm border-top border-4 border-warning text-center">
-          <img src="https://via.placeholder.com/400x300?text=Kids+Wrestling+Class" class="card-img-top" alt="Kids Wrestling">
+          <video class="card-img-top" controls loop muted autoplay poster="https://via.placeholder.com/400x300?text=Kids+Wrestling+Class">
+            <source :src="kidsWrestlingVideo" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
           <div class="card-body d-flex flex-column">
             <h2 class="card-title h4 fw-bold text-dark">{{ $t('classes.kids_wrestling_title') }}</h2>
             <p class="card-text text-muted flex-grow-1">{{ $t('classes.kids_wrestling_text') }}</p>
@@ -18,7 +21,10 @@
       <!-- Brazilian Jiu-Jitsu -->
       <div class="col">
         <div class="card h-100 shadow-sm border-top border-4 border-warning text-center">
-          <img src="https://via.placeholder.com/400x300?text=Brazilian+Jiu-Jitsu+Sparring" class="card-img-top" alt="Brazilian Jiu-Jitsu">
+          <video class="card-img-top" controls loop muted autoplay poster="https://via.placeholder.com/400x300?text=Brazilian+Jiu-Jitsu+Sparring">
+            <source :src="bjjVideo" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
           <div class="card-body d-flex flex-column">
             <h2 class="card-title h4 fw-bold text-dark">{{ $t('classes.bjj_title') }}</h2>
             <p class="card-text text-muted flex-grow-1">{{ $t('classes.bjj_text') }}</p>
@@ -30,7 +36,10 @@
       <!-- Judo -->
       <div class="col">
         <div class="card h-100 shadow-sm border-top border-4 border-warning text-center">
-          <img src="https://via.placeholder.com/400x300?text=Judo+Throw+Technique" class="card-img-top" alt="Judo">
+          <video class="card-img-top" controls loop muted autoplay poster="https://via.placeholder.com/400x300?text=Judo+Throw+Technique">
+            <source :src="judoVideo" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
           <div class="card-body d-flex flex-column">
             <h2 class="card-title h4 fw-bold text-dark">{{ $t('classes.judo_title') }}</h2>
             <p class="card-text text-muted flex-grow-1">{{ $t('classes.judo_text') }}</p>
@@ -42,7 +51,10 @@
       <!-- Submission Grappling -->
       <div class="col">
         <div class="card h-100 shadow-sm border-top border-4 border-warning text-center">
-          <img src="https://via.placeholder.com/400x300?text=Submission+Grappling+Drill" class="card-img-top" alt="Submission Grappling">
+          <video class="card-img-top" controls loop muted autoplay poster="https://via.placeholder.com/400x300?text=Submission+Grappling+Drill">
+            <source :src="submissionGrapplingVideo" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
           <div class="card-body d-flex flex-column">
             <h2 class="card-title h4 fw-bold text-dark">{{ $t('classes.submission_grappling_title') }}</h2>
             <p class="card-text text-muted flex-grow-1">{{ $t('classes.submission_grappling_text') }}</p>
@@ -55,7 +67,20 @@
 </template>
 
 <script>
+import kidsWrestlingVideo from '@/assets/videos/kids_wrestling.mp4';
+import bjjVideo from '@/assets/videos/bjj.mp4';
+import judoVideo from '@/assets/videos/judo.mp4';
+import submissionGrapplingVideo from '@/assets/videos/submission_grappling.mp4';
+
 export default {
   name: 'ClassesPage',
-}
+  data() {
+    return {
+      kidsWrestlingVideo: kidsWrestlingVideo,
+      bjjVideo: bjjVideo,
+      judoVideo: judoVideo,
+      submissionGrapplingVideo: submissionGrapplingVideo,
+    };
+  },
+};
 </script>
