@@ -18,16 +18,16 @@
               <router-link to="/classes" class="nav-link text-light">{{ $t('navbar.classes') }}</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/schedule" class="nav-link text-light">{{ $t('navbar.schedule') }}</router-link>
+              <router-link to="/curriculum" class="nav-link text-light">{{ $t('navbar.curriculum') }}</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/contact" class="nav-link text-light">{{ $t('navbar.contact') }}</router-link>
+              <router-link to="/schedule" class="nav-link text-light">{{ $t('navbar.schedule') }}</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/facilities" class="nav-link text-light">{{ $t('navbar.facilities') }}</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/curriculum" class="nav-link text-light">{{ $t('navbar.curriculum') }}</router-link>
+              <router-link to="/contact" class="nav-link text-light">{{ $t('navbar.contact') }}</router-link>
             </li>
           </ul>
           <div class="d-flex">
