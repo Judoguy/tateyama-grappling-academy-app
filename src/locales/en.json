@@ -75,7 +75,13 @@
     "hours_sat": "Saturday: 9:00 AM - 3:00 PM",
     "hours_sun": "Sunday: Closed",
     "follow_us_title": "Follow Us:",
-    "message_sent_alert": "Message sent! (This is a placeholder. In a real app, this would send data to a backend.)"
+    "message_sent_alert": "Message sent! (This is a placeholder. In a real app, this would send data to a backend.)",
+    "message_sent_success": "Your message has been sent successfully! We will get back to you soon.",
+    "name_required": "Name is required.",
+    "email_required": "Email is required.",
+    "email_invalid": "Please enter a valid email address.",
+    "message_required": "Message is required.",
+    "form_validation_error": "Please correct the errors in the form."
   },
   "facilities": {
     "title": "Our State-of-the-Art Facilities",

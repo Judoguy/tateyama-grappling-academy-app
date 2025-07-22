@@ -11,18 +11,24 @@
           <form @submit.prevent="submitForm">
             <div class="mb-3">
               <label for="name" class="form-label fw-bold">{{ $t('contact.name_label') }}</label>
-              <input type="text" id="name" v-model="form.name" class="form-control" required>
+              <input type="text" id="name" v-model="form.name" class="form-control" :class="{'is-invalid': nameError}" required>
+              <div class="invalid-feedback" v-if="nameError">{{ nameError }}</div>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label fw-bold">{{ $t('contact.email_label') }}</label>
-              <input type="email" id="email" v-model="form.email" class="form-control" required>
+              <input type="email" id="email" v-model="form.email" class="form-control" :class="{'is-invalid': emailError}" required>
+              <div class="invalid-feedback" v-if="emailError">{{ emailError }}</div>
             </div>
             <div class="mb-4">
               <label for="message" class="form-label fw-bold">{{ $t('contact.message_label') }}</label>
-              <textarea id="message" v-model="form.message" rows="6" class="form-control" required></textarea>
+              <textarea id="message" v-model="form.message" rows="6" class="form-control" :class="{'is-invalid': messageError}" required></textarea>
+              <div class="invalid-feedback" v-if="messageError">{{ messageError }}</div>
             </div>
-            <button type="submit" class="btn btn-warning btn-lg fw-bold">{{ $t('contact.send_message_button') }}</button>
+            <button type="submit" class="btn btn-primary btn-lg fw-bold">{{ $t('contact.send_message_button') }}</button>
           </form>
+          <div v-if="messageText" :class="{'alert': true, 'alert-success': messageStatus === 'success', 'alert-danger': messageStatus === 'error', 'mt-3': true}" role="alert">
+            {{ messageText }}
+          </div>
         </div>
       </div>
 
@@ -63,16 +69,62 @@ export default {
         email: '',
         message: '',
       },
+      messageStatus: '', // 'success' or 'error'
+      messageText: '',
+      nameError: '',
+      emailError: '',
+      messageError: '',
     };
   },
   methods: {
+    validateForm() {
+      let isValid = true;
+      this.nameError = '';
+      this.emailError = '';
+      this.messageError = '';
+
+      if (!this.form.name) {
+        this.nameError = this.$t('contact.name_required');
+        isValid = false;
+      }
+
+      if (!this.form.email) {
+        this.emailError = this.$t('contact.email_required');
+        isValid = false;
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.form.email)) {
+        this.emailError = this.$t('contact.email_invalid');
+        isValid = false;
+      }
+
+      if (!this.form.message) {
+        this.messageError = this.$t('contact.message_required');
+        isValid = false;
+      }
+
+      return isValid;
+    },
     submitForm() {
-      alert(this.$t('contact.message_sent_alert'));
-      // In a real application, you would send this data to a backend server
-      console.log('Form submitted:', this.form);
-      this.form.name = '';
-      this.form.email = '';
-      this.form.message = '';
+      if (!this.validateForm()) {
+        this.messageStatus = 'error';
+        this.messageText = this.$t('contact.form_validation_error');
+        return;
+      }
+
+      // Simulate form submission success
+      this.messageStatus = 'success';
+      this.messageText = this.$t('contact.message_sent_success');
+
+      // Clear form after a short delay
+      setTimeout(() => {
+        this.form.name = '';
+        this.form.email = '';
+        this.form.message = '';
+        this.messageStatus = '';
+        this.messageText = '';
+        this.nameError = '';
+        this.emailError = '';
+        this.messageError = '';
+      }, 3000); // Message disappears after 3 seconds
     },
   },
 };

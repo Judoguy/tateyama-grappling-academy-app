@@ -69,7 +69,7 @@
           <div class="card-body d-flex flex-column justify-content-between">
             <h4 class="card-title">{{ $t('plans.kids_wrestling_plan_title') }}</h4>
             <p class="card-text">{{ $t('plans.kids_wrestling_plan_text') }}</p>
-            <router-link to="/curriculum/kids-wrestling" class="btn btn-warning mt-3">{{ $t('plans.view_plan_button') }}</router-link>
+            <router-link to="/curriculum/kids-wrestling" class="btn btn-primary mt-3">{{ $t('plans.view_plan_button') }}</router-link>
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@
           <div class="card-body d-flex flex-column justify-content-between">
             <h4 class="card-title">{{ $t('plans.bjj_plan_title') }}</h4>
             <p class="card-text">{{ $t('plans.bjj_plan_text') }}</p>
-            <router-link to="/curriculum/bjj" class="btn btn-warning mt-3">{{ $t('plans.view_plan_button') }}</router-link>
+            <router-link to="/curriculum/bjj" class="btn btn-primary mt-3">{{ $t('plans.view_plan_button') }}</router-link>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@
           <div class="card-body d-flex flex-column justify-content-between">
             <h4 class="card-title">{{ $t('plans.judo_plan_title') }}</h4>
             <p class="card-text">{{ $t('plans.judo_plan_text') }}</p>
-            <router-link to="/curriculum/judo" class="btn btn-warning mt-3">{{ $t('plans.view_plan_button') }}</router-link>
+            <router-link to="/curriculum/judo" class="btn btn-primary mt-3">{{ $t('plans.view_plan_button') }}</router-link>
           </div>
         </div>
       </div>
@@ -96,7 +96,7 @@
           <div class="card-body d-flex flex-column justify-content-between">
             <h4 class="card-title">{{ $t('plans.submission_grappling_plan_title') }}</h4>
             <p class="card-text">{{ $t('plans.submission_grappling_plan_text') }}</p>
-            <router-link to="/curriculum/submission-grappling" class="btn btn-warning mt-3">{{ $t('plans.view_plan_button') }}</router-link>
+            <router-link to="/curriculum/submission-grappling" class="btn btn-primary mt-3">{{ $t('plans.view_plan_button') }}</router-link>
           </div>
         </div>
       </div>

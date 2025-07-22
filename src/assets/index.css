@@ -1,3 +1,153 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  --color-primary-accent: #DC3545; /* Red */
+  --color-secondary-accent: #6A5ACD; /* SlateBlue */
+  --color-light-background: #F8F8F8;
+  --color-dark-text: #343A40;
+  --color-dark-text-rgb: 52, 58, 64; /* RGB values for #343A40 */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-light-background);
+  color: var(--color-dark-text);
+}
+
+/* General overrides for Bootstrap components to use new colors */
+.navbar-brand.text-warning {
+  color: var(--color-primary-accent) !important;
+}
+
+.btn-outline-warning {
+  color: var(--color-primary-accent);
+  border-color: var(--color-primary-accent);
+}
+
+.btn-outline-warning:hover {
+  background-color: var(--color-primary-accent);
+  border-color: var(--color-primary-accent);
+  color: var(--color-dark-text); /* Ensure text color is dark on hover */
+}
+
+.btn-primary {
+  background-color: var(--color-primary-accent);
+  border-color: var(--color-primary-accent);
+  color: var(--color-light-background);
+}
+
+.btn-primary:hover {
+  background-color: #C82333; /* Darker red on hover */
+  border-color: #C82333;
+  color: var(--color-light-background);
+}
+
+.border-warning {
+  border-color: var(--color-primary-accent) !important;
+}
+
+.badge.bg-warning {
+  background-color: var(--color-primary-accent) !important;
+  color: var(--color-dark-text) !important;
+}
+
+.text-warning {
+  color: var(--color-primary-accent) !important;
+}
+
+.text-dark {
+  color: var(--color-dark-text) !important;
+}
+
+.bg-light {
+  background-color: var(--color-light-background) !important;
+}
+
+.bg-dark {
+  background-color: var(--color-dark-text); /* Removed !important */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--color-light-background) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.router-link-exact-active {
+  color: var(--color-primary-accent) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--color-primary-accent) !important;
+}
+
+.shadow-inner {
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific adjustments for FacilitiesPage.vue */
+.facilities-page .border-warning {
+  border-color: var(--color-primary-accent) !important;
+}
+
+/* Specific adjustments for ClassesPage.vue */
+.card.border-top.border-warning {
+  border-color: var(--color-primary-accent) !important;
+}
+
+/* Specific adjustments for MatthewMoserBio.vue */
+h1 {
+  color: var(--color-dark-text);
+}
+
+h2 {
+  color: var(--color-dark-text);
+  border-bottom-color: var(--color-primary-accent);
+}
+
+p {
+  color: var(--color-dark-text);
+}
+
+ul li strong {
+  color: var(--color-primary-accent);
+}
+
+/* Specific adjustments for SchedulePage.vue */
+.table-dark {
+  background-color: var(--color-dark-text) !important;
+}
+
+.table-bordered {
+  border-color: var(--color-dark-text);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(220, 53, 69, 0.1) !important; /* Primary accent with transparency */
+}
+
+.schedule-page .border-warning {
+  border-color: var(--color-primary-accent) !important;
+}
+
+.submission-grappling-class {
+  background-color: rgba(220, 53, 69, 0.2); /* Primary accent with transparency */
+}
+
+.open-mat-class {
+  background-color: rgba(106, 90, 205, 0.2); /* Secondary accent with transparency */
+}
+
+.strength-training-class {
+  background-color: rgba(220, 53, 69, 0.2); /* Primary accent with transparency */
+}
+
+.wrestling-class {
+  background-color: rgba(106, 90, 205, 0.2); /* Secondary accent with transparency */
+}
+
+.judo-class {
+  background-color: rgba(220, 53, 69, 0.2); /* Primary accent with transparency */
+}
+
+.bjj-class {
+  background-color: rgba(106, 90, 205, 0.2); /* Secondary accent with transparency */
+}
